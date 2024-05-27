@@ -6,12 +6,9 @@ import Business from "../Business/Business";
 const BusinessList = () => {
   return (
     <div className={styles.BusinessList}>
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
+      {businesses.map((business) => {
+        return <Business business={business} key={business.name} />;
+      })}
     </div>
   );
 };
