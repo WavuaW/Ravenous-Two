@@ -3,7 +3,7 @@ import styles from "./BusinessList.module.css";
 
 import Business from "../Business/Business";
 
-const BusinessList = () => {
+const BusinessList = ({businesses}) => {
   return (
     <div className={styles.BusinessList}>
       {businesses.map((business) => {
